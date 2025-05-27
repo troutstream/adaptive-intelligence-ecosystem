@@ -1,0 +1,32 @@
+# =============================================================================
+# Adaptive Intelligence Ecosystem - Orchestration Level .gitignore
+# =============================================================================
+# Minimal ecosystem-level ignores only
+# Each component (docker/, ansible/, projects/, shared/) manages its own .gitignore
+
+# Ignore architecture parts
+adaptive-intelligence/*
+
+# Ecosystem-level environment configuration
+.env
+.env.local
+.env.ecosystem
+
+# IDE & System files at root level
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Ecosystem logs (if any orchestration generates logs here)
+*.log
+ecosystem-*.log
+
+# Temporary files at root level
+tmp/
+temp/
+
+# Deployment artifacts generated at ecosystem level
+deploy/
+*.tar.gz
+*.zip
